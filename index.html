@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+    <title>MFG - Become an investor!</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Righteous&display=swap" rel="stylesheet"> 
+	
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js.cookie.js"></script>
+	<script type="text/javascript" src="translation.js"></script>
+	<script type="text/javascript" src="animatescroll.min.js"></script>
+
+	<script>
+		// Select all links with hashes
+		$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.click(function(event) {
+			// On-page links
+			if (
+			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			&& 
+			location.hostname == this.hostname
+			) {
+			// Figure out element to scroll to
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			// Does a scroll target exist?
+			if (target.length) {
+				// Only prevent default if animation is actually gonna happen
+				event.preventDefault();
+				$('html, body').animate({
+				scrollTop: target.offset().top
+				}, 1000, function() {
+				// Callback after animation
+				// Must change focus!
+				var $target = $(target);
+				$target.focus();
+				if ($target.is(":focus")) { // Checking if the target was focused
+					return false;
+				} else {
+					$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+					$target.focus(); // Set focus again
+				};
+				});
+			}
+			}
+		});
+	</script>
+
+
+	<script>
+		function changeBackgroundColor(){
+			var scroll;
+			var blue = 0;
+
+			function getFraction(x, y){
+				var result = x / y;
+				return result;
+			}
+
+			function lerp(min, max, fraction){
+				var result =  (min-max) * fraction;
+				return result;
+			}
+
+			window.addEventListener("scroll", function (event) {
+			scroll = this.scrollY;
+			if(scroll < 1200){
+				document.getElementById("backgroundImage").style.opacity = 1 - lerp(1, 0, getFraction(scroll, 1200));
+			}else
+			{
+				document.getElementById("backgroundImage").style.opacity = 0;
+			}
+			});
+		}
+	</script>
+
+  </head>
+	<body onload="changeBackgroundColor();">
+		<!--<div id="backgroundImage"></div>-->
+
+		<div id="content">
+			<img id="topLogo" src="pics/logo.png"/>
+			<div class="subtitleBar">Become an investor and fulfill your childhood dream!</div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1Furs9DoEJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</iframe> 
+			<div class="subtitleBar">Check out store pages!</div>
+			<div class="spacer"></div>
+			<div class="embed"></div>
+			<div class="embed"></div>
+			<div class="subtitleBar">More informations</div>
+
+			<div class="headerItem">
+				<img src="pics/yourstory.png"/>
+				<p>Start the game by deciding about your past. Were you a good student as a child? Have you immersed yourself in creative hobbies? Or were you the kind of guy who starts working straight out of primary school? It's all up to you, your choices may flood you with debts or make up your future. It is your finance, <span class="bold">your story</span>.</p>
+			</div>
+
+			<div class="headerItem">
+					<img src="pics/invest.png"/>
+					<p>Start investing to fulfill your dream - be it a private fighter jet, the greatest hitchhiking trip in human history or your own tropical island with a beach house. You can try going with a full time job for your whole life but it probably won't cut it. You will need to start taking risks and playing smart. This is the key to successful <span class="bold">investing</span>.</p>
+			</div>
+
+			<div class="headerItem">
+					<img src="pics/health.png"/>
+					<p>There were many finacial games before about money itself. In this game you will face other life challenges - one of them is taking care of your <span class="bold">health</span>, both physical and mental. Sleep time is very important as is daily excercising. You will lose your health if you stop excercising and develop depression if you stay sad for long periods of time.</p>
+			</div>
+
+			<div class="headerItem">
+					<img src="pics/time.png"/>
+					<p>Time management is going to be a key part in your development. Life progress speed is dependant on your free time assignment. If you choose to sleep 8 hours, work for the next 8 hours, spend 3 hours on entertainment and 30 minutes on taking care of your health each day - you are left with 4 hours 30 minutes and it is the time you can spend on investing. It is scaled down in a way that one lifetime should take around 80 real time hours.</p>
+			</div>
+
+			<div class="headerItem">
+					<img src="pics/options.png"/>
+					<p>We want to make you sure you always have many paths to your dream. There is no core mechanic - you can start investing in stocks right away and with enough luck you can stay in full time job whilst your assets grow. You can start your own company and build a shop to keep you in business. You can start trading rare cars. You can buy real estate and trade it or rent it for stable income. You can start illegal business and stop paying taxes. High risk - high reward. Build cryptocurrency farm or just trade them on market. The <span class="bold">options</span> are almost unlimited.</p>
+			</div>
+
+			<div class="headerItem">
+					<img src="pics/customize.png"/>
+					<p>From character look to your computer's desktop wallpaper and color preset - your experience will be different than others'. Make everything look the way you want it to and enjoy <span class="bold">customized</span> playthrough.</p>
+			</div>
+
+			<div class="headerItem">
+					<img src="pics/learn.png"/>
+					<p>The most important part of the game is that it aims to be as realistic as it is possible. That means you will learn how investing works, how to manage your finances and how do taxes work. Depending on selected difficulty you will either face new knowledge or a great challenge but in the end you will gather <span class="bold">experience</span> that can be used in real life.</p>
+			</div>
+		</div>
+  </body>
+</html>

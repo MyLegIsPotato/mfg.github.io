@@ -1,0 +1,240 @@
+/*
+Palette, use only those colors!
+1. Solid White: #FFF
+2. Hard Blue: #2B5CFA
+3. Normal Blue: #3A77F2
+4. Dark Blue: #25395B
+5. Gray: #545454
+*/
+
+:root {
+	--white: white;
+	--hardBlue: #2B5CFA;
+	--normalBlue: #3A77F2;
+	--darkBlue: #25395B;
+	--gray: #545454;
+}
+
+body
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	background-image: none;
+	background-color: var(--white);
+	font-family: 'Raleway', sans-serif;
+	color: var(--white);
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.outline{
+	color: var(--white);
+	-webkit-text-fill-color: var(--normalBlue); /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--white);
+}
+
+.headerItem p{
+	padding: 0px 30px 30px 30px;
+}
+
+.embed{
+	width: 400px;
+	height: 200px;
+	background-color: var(--gray);
+	border: 2px solid var(--white);
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#content{
+	width: 800px;
+	background-color: var(--darkBlue);
+	min-height: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topLogo{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	width: 450px;
+	height: auto;
+}
+
+.subtitleBar{
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 2px solid var(--white);
+	background-color: var(--normalBlue);
+	color: var(--white);
+}
+
+iframe{
+	margin-top: 4px;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+}
+
+.video{
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	height: auto;
+}
+
+.headerItem img{
+	margin-top: 40px;
+	margin-left: 20px;
+	height: 100px;
+	width: auto;
+}
+
+.underline{
+	width: 75%;
+	height: 5px;
+}
+
+#backgroundImage
+{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url("pics/neonflames.png");
+	background-repeat: repeat-y;
+	background-size: 100%;
+	opacity: 1;
+	filter:alpha(opacity=40);
+	height: 3000px;
+}
+
+#globe
+{
+	z-index: 4;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: white;
+	height: 50px;
+	margin-left: 0px;
+	opacity: 0.5;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+[id="globe"] img
+{
+	filter: invert(100%);
+	height: 50px;
+	width: 50px;
+}
+
+[id="globe"] [class="translate"]
+{
+	display: none;
+}
+
+[id="globe"]:hover
+{
+	opacity: 0%;
+}
+
+[id="globe"]:hover [class="translate"]
+{
+	display: block;
+}
+
+[id="globe"] [class="translate"]:hover
+{
+	display: block;
+	opacity: 100%;
+	z-index: 100;
+}
+
+.spacer
+{
+	height: 50px;
+}
+
+.lang
+{
+	cursor: cursor;
+}
+
+#en
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: rgba(20,20,50,0.6);
+	border: 2px solid #ccc;
+	color: white;
+	height: inherit;
+	margin-left: 0px;
+	opacity: 0.5;
+	background-image: url('english.png');
+    background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	top:0px;
+	left: 80px;
+}
+
+#en:hover
+{
+    opacity: 1;
+}
+
+#pl
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: rgba(20,20,50,0.6);
+	border: 2px solid #ccc;
+	color: white;
+	height: inherit;
+	margin-left: 0px;
+	opacity: 0.5;
+	background-image: url('polski.png');
+    background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+#pl:hover
+{
+    opacity: 1;
+}
+
+.translate
+{
+	float: left;
+	width: 80px;
+}
+
