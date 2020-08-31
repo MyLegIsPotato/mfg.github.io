@@ -1,0 +1,410 @@
+/*
+Palette, use only those colors!
+1. Solid White: #FFF
+2. Hard Blue: #2B5CFA
+3. Normal Blue: #3A77F2
+4. Dark Blue: #25395B
+5. Gray: #545454
+*/
+
+:root {
+	--white: white;
+	--hardBlue: #2B5CFA;
+	--normalBlue: #3A77F2;
+	--darkBlue: #25395B;
+	--gray: #545454;
+}
+
+body
+{
+	margin: 0 !important;
+	padding: 0 !important;
+	background-image: none;
+	background-color: rgb(19, 30, 49);
+	font-family: 'Raleway', sans-serif;
+	color: var(--white);
+}
+
+#footer{
+	background-color: var(--gray);
+	color: var(--white);
+	width: 100%;
+	border-top: 2px solid var(--hardBlue);
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.middle input{
+	width: 100%;
+}
+
+.middle{
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 200px;
+	height: auto;
+	display: block;
+}
+
+.patreon{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	background-color: white;
+	border: 2px solid #FF424D;
+	margin-bottom: 30px;
+}
+
+.paypal{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	background-color: white;
+	border-bottom: 2px solid var(--hardBlue);
+	border-left: 2px solid var(--hardBlue);
+	border-right: 2px solid var(--hardBlue);
+	margin-bottom: 4px;
+}
+
+a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.teamMember p{
+	text-align: center;
+	padding: 20px;
+}
+
+.teamMember h1,h3{
+	text-align: center;
+}
+
+.teamMember img{
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 180px;
+	display: block;
+	margin: auto;
+}
+
+.teamMember{
+	width: 250px;
+	height: 500px;
+	flex-basis: auto;
+	align-self: flex-start;
+}
+
+.teamFlexBox{
+	margin-top: 50px;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.outline{
+	color: var(--white);
+	-webkit-text-fill-color: var(--normalBlue); /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: var(--white);
+}
+
+.headerItem .decor {
+	width: 200px;
+	height: auto;
+	margin: 0px;
+	float: right;
+	position: relative;
+	right: 30px;
+	top: 20px;
+	transform: scaleX(0);
+	transform-origin: right;
+	animation: reveal 1s ease-in-out forwards;
+}
+
+.headerItem .decor {
+	width: 200px;
+	height: auto;
+	margin: 0px;
+	float: right;
+	position: relative;
+	right: 30px;
+	top: 20px;
+}
+
+@keyframes reveal{
+	0%{
+		transform: scale(0);
+		translate: translate(200px);
+	}
+
+	100%{
+		transform: scale(1);
+		translate: translate(0px);
+	}
+}
+
+.headerItem img{
+	margin-top: 40px;
+	margin-left: 20px;
+	height: 100px;
+	width: auto;
+}
+.headerItem p{
+	padding: 0px 30px 0px 30px;
+}
+
+.headerItem{
+	margin-bottom: 50px;
+}
+
+.embedInline{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+.embed{
+	display: inline-block;
+	width: 400px;
+	height: 200px;
+	background-color: var(--darkBlue);
+	border: 2px solid var(--white);
+	margin-bottom: 50px;
+}
+
+#content{
+	width: 840px;
+	background-color: var(--darkBlue);
+	min-height: 4500px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 5px solid var(--white);
+	border-right: 5px solid var(--white);
+}
+
+#topLogo{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	width: 450px;
+	height: auto;
+}
+
+.subtitleBar{
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 2px solid var(--white);
+	background-color: var(--normalBlue);
+	color: var(--white);
+}
+
+.topbar ul li:hover{
+	background-color: var(--normalBlue);
+	border: 1px solid var(--hardBlue);
+	cursor: pointer;
+}
+
+.topbar ul li{
+	background: var(--gray);
+	border: 1px solid var(--white);
+	border-bottom: none;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 130px;
+	margin-left: 8px;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+}
+
+
+.topbar ul{
+	list-style: none;
+	height: 50px;
+	display: flex;
+	margin-bottom: 0;
+}
+
+.topbar{
+	margin-top: 30px;
+	height: 50px;
+	width: 500px;
+}
+
+.discord
+{
+	z-index: 5;
+	right: 550px;
+	float: right;
+	padding: 10px;
+	width: 280px;
+	height: 250px;
+}
+
+.video{
+	margin-top: 4px;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+}
+
+.underline{
+	width: 75%;
+	height: 5px;
+}
+
+#backgroundImage
+{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url("pics/neonflames.png");
+	background-repeat: repeat-y;
+	background-size: 100%;
+	opacity: 1;
+	filter:alpha(opacity=40);
+	height: 3000px;
+}
+
+#globe
+{
+	z-index: 4;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: white;
+	height: 50px;
+	margin-left: 0px;
+	opacity: 0.5;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+[id="globe"] img
+{
+	filter: invert(100%);
+	height: 50px;
+	width: 50px;
+}
+
+[id="globe"] [class="translate"]
+{
+	display: none;
+}
+
+[id="globe"]:hover
+{
+	opacity: 0%;
+}
+
+[id="globe"]:hover [class="translate"]
+{
+	display: block;
+}
+
+[id="globe"] [class="translate"]:hover
+{
+	display: block;
+	opacity: 100%;
+	z-index: 100;
+}
+
+.spacer
+{
+	height: 50px;
+}
+
+.lang
+{
+	cursor: cursor;
+}
+
+#en
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: rgba(20,20,50,0.6);
+	border: 2px solid #ccc;
+	color: white;
+	height: inherit;
+	margin-left: 0px;
+	opacity: 0.5;
+	background-image: url('english.png');
+    background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	top:0px;
+	left: 80px;
+}
+
+#en:hover
+{
+    opacity: 1;
+}
+
+#pl
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: rgba(20,20,50,0.6);
+	border: 2px solid #ccc;
+	color: white;
+	height: inherit;
+	margin-left: 0px;
+	opacity: 0.5;
+	background-image: url('polski.png');
+    background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 8px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+#pl:hover
+{
+    opacity: 1;
+}
+
+.translate
+{
+	float: left;
+	width: 80px;
+}
+
