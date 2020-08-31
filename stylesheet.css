@@ -25,6 +25,56 @@ body
 	color: var(--white);
 }
 
+#footer{
+	background-color: var(--gray);
+	color: var(--white);
+	width: 100%;
+	border-top: 2px solid var(--hardBlue);
+	height: 30px;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.middle input{
+	width: 100%;
+}
+
+.middle{
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 200px;
+	height: auto;
+	display: block;
+}
+
+.patreon{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	background-color: white;
+	border: 2px solid #FF424D;
+	margin-bottom: 30px;
+}
+
+.paypal{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;
+	background-color: white;
+	border-bottom: 2px solid var(--hardBlue);
+	border-left: 2px solid var(--hardBlue);
+	border-right: 2px solid var(--hardBlue);
+	margin-bottom: 4px;
+}
+
 a{
 	display: block;
 	width: 100%;
@@ -75,6 +125,18 @@ a{
 	-webkit-text-stroke-color: var(--white);
 }
 
+.headerItem .decor {
+	width: 200px;
+	height: auto;
+	margin: 0px;
+	float: right;
+	position: relative;
+	right: 30px;
+	top: 20px;
+	transform: scaleX(0);
+	transform-origin: right;
+	animation: reveal 1s ease-in-out forwards;
+}
 
 .headerItem .decor {
 	width: 200px;
@@ -84,6 +146,18 @@ a{
 	position: relative;
 	right: 30px;
 	top: 20px;
+}
+
+@keyframes reveal{
+	0%{
+		transform: scale(0);
+		translate: translate(200px);
+	}
+
+	100%{
+		transform: scale(1);
+		translate: translate(0px);
+	}
 }
 
 .headerItem img{
@@ -100,21 +174,26 @@ a{
 	margin-bottom: 50px;
 }
 
+.embedInline{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
 .embed{
+	display: inline-block;
 	width: 400px;
 	height: 200px;
-	background-color: var(--gray);
+	background-color: var(--darkBlue);
 	border: 2px solid var(--white);
 	margin-bottom: 50px;
-	margin-left: auto;
-	margin-right: auto;
-
 }
 
 #content{
-	width: 800px;
+	width: 840px;
 	background-color: var(--darkBlue);
-	min-height: 6000px;
+	min-height: 4500px;
 	margin-left: auto;
 	margin-right: auto;
 	border-left: 5px solid var(--white);

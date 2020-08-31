@@ -98,7 +98,6 @@
   </head>
 	<body>
 		<!--<div id="backgroundImage"></div>-->
-
 		<div id="content">
 			<img id="topLogo" src="pics/logo.png"/>
 			<iframe class="discord" src="https://discordapp.com/widget?id=741719455545163928&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -114,8 +113,33 @@
 			</iframe> 
 			<div class="subtitleBar" id="buy">Check out store pages!</div>
 			<div class="spacer"></div>
-			<div class="embed"><img src="pics/steamExample.png"></div>
-			<div class="embed"><img src="pics/itchExample.png"></div>
+			<div class="embedInline">
+				<div class="embed"><img src="pics/steamExample.png"></div>
+				<div class="embed"><img src="pics/itchExample.png"></div>
+			</div>
+			<div class="subtitleBar" id="buy">Donate and support the development</div>
+			<div class="spacer"></div>
+			<div class="embedInline">
+				<div class="embed">
+					<img class="paypal" src="pics/pp.webp"/>
+					<form class="middle" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_donations" />
+						<input type="hidden" name="business" value="mateusztelakowski@gmail.com" />
+						<input type="hidden" name="item_name" value="Support the development!" />
+						<input type="hidden" name="currency_code" value="USD" />
+						<input type="image" src="pics/pp.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+						<img alt="Donate" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+						</form>
+				</div>
+				<div class="embed">
+					<img class="patreon" src="pics/patreon.png">
+					<a href="https://www.patreon.com/MFG_Devs"><img class="middle" src="pics/patron.png"></a>
+				</div>
+				<div class="headerItem">
+					<p>Donating won't guarantee you a copy of the game (except of some tiers of patreon) but we ultimately need money to keep going with the development. We a group of students and we plan on utilizing any income in favor of mastering the development cycle and future updates. If you care about the project than we would be grateful if you could spare us some cash. Later we may even employ some programmers or graphic designers to help us deliver the best product possible, as it is indeed, our mission. 💙</p>
+				</div>
+			</div>
+
 			<div class="subtitleBar" id="info">More informations</div>
 
 			<div class="headerItem">
@@ -156,7 +180,7 @@
 			<div class="subtitleBar" id="team">The team</div>
 			<div class="teamFlexBox">
 					<div class="teamMember">
-						<img src="https://via.placeholder.com/150"/>
+						<img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/41/41146436ad3f919287f6112088677bfd6348dc7a_full.jpg"/>
 						<h1>Lel Lelovsky</h1>
 						<h3>Programmer</h3>
 						<p>
@@ -164,7 +188,7 @@
 						</p>
 					</div>
 					<div class="teamMember">						
-						<img src="https://via.placeholder.com/150"/>
+						<img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/aa/aa5f239385ec73a3784d80d48ee23564dad45cf0_full.jpg"/>
 						<h1>mrWezyr</h1>
 						<h3>3D Graphics</h3>
 						<p>
@@ -172,7 +196,7 @@
 						</p>
 					</div>
 					<div class="teamMember">						
-						<img src="https://via.placeholder.com/150"/>
+						<img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/33/33fa1dd0e4af415a4566e21fcc83cd9d823d6ac4_full.jpg"/>
 						<h1>Kwazybor</h1>
 						<h3>Programmer</h3>
 						<p>
@@ -187,8 +211,9 @@
 					<span class="bold">We are</span> a group of friends with a dream of creating a game that will be fun to play. We have absolutely no idea what are we doing but we have some skills and a destination that we are going to reach. We are working on the game in 90% of our free time, the uniqueness of your idea is what makes us want to complete that goal. We want our game to be as close to perfect as we can make it. Pretty, optimized, addictive and fun. We don't use any premade assets - the game is going to be <span class="bold">our masterpiece.</span> We also have a mission of teaching you that you don't have to work until your 60s. The game is going to show you how to manage your finances in way that you can retire even when young.
 				</p>
 			</div>
-
+			<div class="spacer"></div>
 		</div>
+		<div id="footer"> Mateusz Telakowski 2020 &copy; All rights reserved.</div>
   </body>
   <script>
 		$(document).ready(function() {
